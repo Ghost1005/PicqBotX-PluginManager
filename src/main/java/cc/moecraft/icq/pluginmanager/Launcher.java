@@ -59,6 +59,9 @@ public class Launcher
                 .setSecret(config.getString("ConnectionSettings.Secret"))
                 .setAccessToken(config.getString("ConnectionSettings.AccessToken")));
 
+        // 设置输出
+        bot.getConfig().setColorSupportLevel(ColorSupportLevel.valueOf(config.getString("LoggerSettings.ColorSupportLevel")));
+
         // 设置异步
         bot.getConfig().setUseAsyncCommands(config.getBoolean("CommandSettings.Async", true));
 
