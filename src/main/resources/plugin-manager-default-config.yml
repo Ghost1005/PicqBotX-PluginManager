@@ -9,12 +9,19 @@ ConnectionSettings:
 
   # 监听端口 (HTTP服务器端口)
   ListeningPort: 31092
+  # Secret
+  Secret: 'This is secret'
+  # AccessToken
+  AccessToken: 'kyLoOCz2wSUYnWIr'
 
 # 账号设置
 Accounts:
 
   # 第一个账号 (这里是账号名, 可以随便写)
   Account1:
+
+    # 机器人名称
+    Name: 'Bot1'
 
     # 发送地址
     PostURL: '127.0.0.1'
@@ -35,6 +42,7 @@ CommandSettings:
   Prefixes:
   - 'bot -'
   - '!'
+  - '！'
   - '/'
 
   # 两个插件同时注册一个指令的话怎么办
